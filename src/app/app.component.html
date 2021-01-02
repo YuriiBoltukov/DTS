@@ -1,1 +1,38 @@
-<app-home></app-home>
+<header class="header">
+   
+    <div class="container">
+        <div class="header__inner">
+            <a class="logo" href="#">
+               <picture class="logo__img">
+                   <source srcset="../../assets/images/logo-mobile.png" media="(max-width: 640px)">
+                   <img src="../../assets/images/logo.svg" alt="">
+               </picture> 
+            </a>
+            <nav class="menu">
+               <ul class="menu__list">
+                   <li class="menu__list-item" routerLinkActive="menu__list-link_active">
+                       <a class="menu__list-link" href="#" routerLink="/about"> О ДРОНЕ </a>
+                   </li>
+                   <li class="menu__list-item" routerLinkActive="menu__list-link_active">
+                     <a class="menu__list-link" href="#" routerLink="/features"> ПРЕИМУЩЕСТВА </a>      
+                   </li>
+                   <li class="menu__list-item" routerLinkActive="menu__list-link_active">
+                     <a class="menu__list-link" href="#" routerLink="/characteristics"> ХАРАКТЕРИСТИКИ </a>
+                   </li>
+                   <li class="menu__list-item" routerLinkActive="menu__list-link_active">
+                     <a class="menu__list-link" href="#" routerLink="/question"> ВОПРОСЫ </a>
+                   </li>
+                   <li class="menu__list-item" routerLinkActive="menu__list-link_active">
+                     <a class="menu__list-link" href="#" routerLink="/contacts"> КОНТАКТЫ </a>
+                   </li>
+               </ul> 
+            </nav>
+            <header class="header__info">
+                <button class="header__btn">купить</button>
+                <a class="header__phone" href="tel:80505676767">8 (050) 567 67 67</a>
+            </header>
+        </div>
+    </div>
+    
+</header>
+<router-outlet></router-outlet>

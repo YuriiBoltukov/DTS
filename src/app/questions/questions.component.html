@@ -1,1 +1,62 @@
-<p>questions works!</p>
+<section id="questions" class="page-section questions">
+    <div class="container">
+        <div class="page-section__wrapper">
+        <h3 class="title">Остались вопросы?</h3>
+        <div class="questions__items">
+            <div class="questions__item">
+                <h4 class="questions__item-title" (click)="openDetail(1)">
+                    Какие отличия между Mavic 2 Pro и Mavic 2 Zoom?
+                </h4>
+                <p *ngIf="currentOpen === 1"  class="questions__item-text">
+                    В Mavic 2 улучшены практически все аспекты: 
+                    камера, передача видеосигнала, полётное время, 
+                    скорость, уровень шума, обнаружение препятствий 
+                    в нескольких направлениях, интеллектуальные 
+                    функции и уникальная функция Hyperlapse (гиперлапс).
+                </p>
+            </div>
+            <div class="questions__item">
+                <h4 class="questions__item-title" (click)="openDetail(2)">
+                    Чем Mavic 2 лучше Mavic Pro?  
+                </h4>
+                <p *ngIf="currentOpen === 2" class="questions__item-text">
+                    В Mavic 2 улучшены практически все аспекты: 
+                    камера, передача видеосигнала, полётное время, 
+                    скорость, уровень шума, обнаружение препятствий 
+                    в нескольких направлениях, интеллектуальные 
+                    функции и уникальная функция Hyperlapse (гиперлапс).
+                </p>
+            </div>
+            <div class="questions__item">
+                <h4 class="questions__item-title" (click)="openDetail(3)">
+                    Можно ли подключить Mavic 2 к очкам DJI Goggles?
+                </h4>
+                <p *ngIf="currentOpen === 3"  class="questions__item-text">
+                    В Mavic 2 улучшены практически все аспекты: 
+                    камера, передача видеосигнала, полётное время, 
+                    скорость, уровень шума, обнаружение препятствий 
+                    в нескольких направлениях, интеллектуальные 
+                    функции и уникальная функция Hyperlapse (гиперлапс).
+                </p>
+            </div>
+            <div class="questions__item">
+                <h4 class="questions__item-title" (click)="openDetail(4)">
+                    Является ли Mavic 2 водонепроницаемым？
+                </h4>
+                <p *ngIf="currentOpen === 4"  class="questions__item-text">
+                    В Mavic 2 улучшены практически все аспекты: 
+                    камера, передача видеосигнала, полётное время, 
+                    скорость, уровень шума, обнаружение препятствий 
+                    в нескольких направлениях, интеллектуальные 
+                    функции и уникальная функция Hyperlapse (гиперлапс).
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="scroll__btn">
+        <a href="#" routerLink="/contacts">
+            <img src="../../assets/images/arrow-down.svg" alt="">
+        </a>
+    </div>
+    </div>
+</section>

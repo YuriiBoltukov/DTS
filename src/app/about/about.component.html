@@ -1,1 +1,55 @@
-<p>about works!</p>
+<section id="products" class="page-section products">
+    <div class="page-section__wrapper">
+    <div class="container">
+        <h3 class="title products__title">
+            Что такое Mavic 2 Pro?
+        </h3>
+        <div class="products__inner">
+            <div class="products__text">
+                <p>
+                    Дрон Mavic 2 Pro - это инженерное чудо, идеальное для аэросъемки. 
+                    Дрон обладает всеми лучшими технологиями DJI, он преобразит мир аэросъемки.
+                </p>
+                <p>
+                    Mavic 2 Pro оснащен совершенно новой камерой Hasselblad L1D-20c. 
+                    Камера L1D-20c работает по уникальной технологии 
+                    Hasselblad Natural Colour Solution (HNCS)5, позволяющей 
+                    пользователям делать великолепные снимки с воздуха с разрешением 
+                    в 20 мегапикселей и потрясающими цветами.
+                </p>
+            </div>
+            <div class="products__slider-box">
+                <p class="products__slider-text">
+                    Лучшая беспилотная
+                    технология аэросъемки        
+                </p>
+                
+                <div class="products__slider-bg">
+                    <swiper [slidesPerView]="1" [spaceBetween]="0" [navigation]="true" effect="fade" [loop]="true">
+                        <ng-template swiperSlide>
+                            <img src="../../assets/images/mavic-2.jpg" alt="" class="products__slider-img">
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img src="../../assets/images/slide-2.jpg" alt="" class="products__slider-img">
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img src="../../assets/images/mavic-2.jpg" alt="" class="products__slider-img">
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img src="../../assets/images/slide-2.jpg" alt="" class="products__slider-img">
+                        </ng-template>
+                        <ng-template swiperSlide>
+                            <img src="../../assets/images/mavic-2.jpg" alt="" class="products__slider-img">
+                        </ng-template>
+                    </swiper>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll__btn">
+        <a href="#" routerLink="/features">
+            <img src="../../assets/images/arrow-down.svg" alt="">
+        </a>
+    </div>
+    </div>
+</section>
