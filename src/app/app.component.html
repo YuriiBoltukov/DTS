@@ -2,12 +2,34 @@
    
     <div class="container">
         <div class="header__inner">
+          <div class="header__menu-wrapper">
             <a class="logo" href="#">
                <picture class="logo__img">
                    <source srcset="../../assets/images/logo-mobile.png" media="(max-width: 640px)">
                    <img src="../../assets/images/logo.svg" alt="">
                </picture> 
             </a>
+            <button mat-icon-button [matMenuTriggerFor]="menu" class="menu-mobile">
+              <span class="material-icons menu__icon">reorder</span>
+            </button>
+            <mat-menu #menu="matMenu">
+              <li class="menu__list-item" mat-menu-item routerLinkActive="menu__list-link_active">
+                <a class="menu__list-link" href="#" routerLink="/about"> О ДРОНЕ </a>
+              </li>
+              <li class="menu__list-item" mat-menu-item routerLinkActive="menu__list-link_active">
+                <a class="menu__list-link" href="#" routerLink="/features"> ПРЕИМУЩЕСТВА </a>      
+              </li>
+              <li class="menu__list-item" mat-menu-item routerLinkActive="menu__list-link_active">
+                <a class="menu__list-link" href="#" routerLink="/characteristics"> ХАРАКТЕРИСТИКИ </a>
+              </li>
+              <li class="menu__list-item" mat-menu-item routerLinkActive="menu__list-link_active">
+                <a class="menu__list-link" href="#" routerLink="/question"> ВОПРОСЫ </a>
+              </li>
+              <li class="menu__list-item" mat-menu-item routerLinkActive="menu__list-link_active">
+                <a class="menu__list-link" href="#" routerLink="/contacts"> КОНТАКТЫ </a>
+              </li>
+            </mat-menu>
+          </div>
             <nav class="menu">
                <ul class="menu__list">
                    <li class="menu__list-item" routerLinkActive="menu__list-link_active">

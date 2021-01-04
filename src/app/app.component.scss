@@ -1,0 +1,30 @@
+.menu-mobile {
+    display: none;
+}
+@media(max-width: 1030px) {
+    .header__menu-wrapper {
+        display: flex;
+    }
+    .menu-mobile {
+        display: block;
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    .menu__icon {
+        color: white;
+    }
+    .menu {
+        display: none;
+    }
+}
+@media(max-width: 895px) {
+    .header {
+        position: absolute;
+    }
+}
+@media(max-width: 400px) {
+    .header__phone {
+        display: none;
+    }
+}

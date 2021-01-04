@@ -12,6 +12,10 @@ import { HomeComponent } from './home/home.component';
 
 import { SwiperModule } from 'swiper/angular';
 
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +29,10 @@ import { SwiperModule } from 'swiper/angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    MatMenuModule,
+    MatIconModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
