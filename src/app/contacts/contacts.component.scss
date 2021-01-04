@@ -1,0 +1,25 @@
+@media(max-width: 700px){
+    .page-section__wrapper{
+        min-width: auto;
+    }
+    .title{
+        text-align: center;
+    }
+    .contacts__inner{
+        padding-left: 0;
+        flex-direction: column;
+    }
+    .contacts__form{
+        max-width: 570px;
+        width: auto;
+        min-width: 250px;
+        margin-right: 0;
+    }
+    .contacts__social-list{
+        flex-direction: row;
+        width: 250px;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
