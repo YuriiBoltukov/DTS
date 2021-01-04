@@ -1,0 +1,30 @@
+@media(max-width: 1270px){
+    .specification__box::before{
+        display: none;
+    }
+    .specification__item:nth-child(2){
+        display: none;
+    }
+    .title{
+        text-align: center;
+    }
+    .specification__inner{
+        justify-content: space-around;
+    }
+}
+@media(max-width: 665px){
+    .specification__inner{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .page-section__wrapper{
+        min-width: auto;
+    }
+    .specification__box-2{
+        margin-top: 35px;
+    }
+    .specification__box-4{
+        margin-top: 35px;
+    }
+
+}
