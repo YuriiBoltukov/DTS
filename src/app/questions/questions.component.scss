@@ -1,0 +1,13 @@
+@media(max-width: 1100px){
+    .questions__item:nth-child(3)::before{
+        display: none;
+    }
+}
+@media(max-width: 780px){
+    .questions__items{
+        margin-right: 57px;
+    }
+    .page-section__wrapper{
+        min-width: auto;
+    }
+}
