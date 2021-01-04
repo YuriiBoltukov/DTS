@@ -1,0 +1,35 @@
+@media(max-width: 1260px){
+    .title{
+        text-align: center;
+    }
+    .benefits__items{
+        flex-direction: column;
+        align-content: center;
+        padding-left: 0;
+    }
+    .benefits__item{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .benefits__item:nth-child(3){
+        margin-top: 30px;
+    }
+    
+}
+@media(max-width: 650px){
+    .benefits__num{
+        display: none;
+    }
+    .benefits__item{
+        flex-direction: column;
+    }
+    .benefits__img{
+        order: 1;
+    }
+    .benefits__info{
+        margin-bottom: 30px;
+    }
+    .page-section__wrapper{
+        min-width: auto;
+    }
+}
